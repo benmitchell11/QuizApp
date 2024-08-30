@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignIn"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/textStartQuiz"
+        android:text="@string/start_quiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+
+
+        <TextView
+            android:id="@+id/quizName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quiz Name"
+            android:textSize="18sp"
+            android:paddingEnd="10dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="New Title"
+            android:visibility="gone"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/quizCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quiz Category"
+        android:textSize="18sp"
+        android:paddingEnd="10dp" />
+
+
+    <TextView
+        android:id="@+id/quizDifficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quiz Difficulty"
+        android:textSize="18sp"
+        android:paddingEnd="10dp" />
+
+    <TextView
+        android:id="@+id/quizType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quiz Type"
+        android:textSize="18sp"
+        android:paddingEnd="10dp" />
+
+    <TextView
+        android:id="@+id/quizQuestions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number of Questions"
+        android:textSize="18sp"
+        android:paddingEnd="10dp" />
+
+    <TextView
+        android:id="@+id/quizStartDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quiz Start Date"
+        android:textSize="18sp"
+        android:paddingEnd="10dp" />
+
+    <LinearLayout
+        android:id="@+id/editStartDateLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone">
+
+    <Button
+        android:id="@+id/startDatePickerButton"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:text="Select New Start Date"
+        android:background="@drawable/square_button_shape"
+        android:layout_marginEnd="10dp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editStartDate"
+            android:hint="YYYY-MM-DD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/quizEndDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quiz End Date"
+        android:textSize="18sp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/txtLikes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Likes: "
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/likeQuiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Like Quiz"
+            android:textSize="18sp"
+            android:paddingEnd="10dp"/>
+
+        <Button
+            android:id="@+id/likeButton"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:text="Like"
+            android:background="@drawable/square_button_shape"
+            android:layout_marginEnd="10dp"
+            />
+
+        <Button
+            android:id="@+id/dislikeButton"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:text="Dislike"
+            android:background="@drawable/square_button_shape"
+            android:layout_marginEnd="10dp"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/editEndDateLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/endDatePickerButton"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="Select New End Date"
+            android:background="@drawable/square_button_shape"
+            android:layout_marginEnd="10dp"
+            />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editEndDate"
+            android:hint="YYYY-MM-DD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_quiz"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/square_button_shape"/>
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Quiz"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/square_button_shape"
+        android:visibility="gone"/>
+
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Quiz"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/square_button_shape"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Details"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/square_button_shape"
+        android:visibility="gone"/>
+
+
+</LinearLayout>

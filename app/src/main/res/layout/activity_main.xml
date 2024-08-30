@@ -9,15 +9,48 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/user_details"
+        android:text="Quizzly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        />
+
+
+
+
+    <Button
+        android:id="@+id/btn_browse"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-         />
+        android:text="Browse Quizzes"
+        android:background="@drawable/square_button_shape"
+        android:layout_marginBottom="10dp"/>
+    <Button
+        android:id="@+id/btn_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Quiz"
+        android:background="@drawable/square_button_shape"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btn_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:background="@drawable/square_button_shape"
+        android:layout_marginBottom="10dp"/>
+
     <Button
         android:id="@+id/btn_logout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/sign_out"/>
+        android:text="@string/sign_out"
+        android:background="@drawable/square_button_shape"/>
+
 
 </LinearLayout>

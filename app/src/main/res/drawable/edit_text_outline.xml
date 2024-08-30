@@ -1,0 +1,8 @@
+<!-- edittext_outline.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@android:color/transparent" />
+    <stroke
+        android:color="#A9A9A9"
+    android:width="2dp" />
+    <corners android:radius="8dp" />
+</shape>
